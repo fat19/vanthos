@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VANTHOS SOCIETY - Tomorrow belongs to the awakened.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.waves.min.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="vantos-logo">
+                <div class="logo-inner">
+                    <span class="logo-text">VANTHOS</span>
+                    <div class="logo-glow"></div>
+                </div>
+            </div>
+            <div class="loading-text">Initializing consciousness...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-trail"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-symbol">V</span>
+                <span class="logo-full">VANTHOS</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">Home</a>
+                <a href="#vision" class="nav-link" data-section="vision">Vision</a>
+                <a href="#chambers" class="nav-link" data-section="chambers">Chambers</a>
+                <a href="#council" class="nav-link" data-section="council">Council</a>
+                <a href="#apply" class="nav-link cta-nav" data-section="apply">Apply</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background" id="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Tomorrow belongs</span>
+                        <span class="title-line">to the <span class="highlight">awakened</span>.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        An ultra-elite alliance of innovators, futurists, and visionaries shaping the destiny of humanity.
+                    </p>
+                    <button class="cta-button" data-section="vision">
+                        <span>Enter Society</span>
+                        <div class="button-glow"></div>
+                    </button>
+                </div>
+                <div class="hero-visual">
+                    <div class="globe-container">
+                        <div class="globe"></div>
+                        <div class="globe-particles"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll to discover</span>
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section id="vision" class="vision-section">
+            <div class="vision-background"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Vision</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="vision-content">
+                    <div class="vision-text">
+                        <div class="vision-quote">
+                            <blockquote>
+                                "We stand at the precipice of a new era. Those who see beyond the veil will shape the future that others merely inherit."
+                            </blockquote>
+                            <cite>— The Founders</cite>
+                        </div>
+                        <div class="vision-mission">
+                            <h3>Our Mission</h3>
+                            <p>To unite the world's most brilliant minds in a sacred alliance dedicated to advancing human potential beyond current limitations.</p>
+                            <div class="mission-points">
+                                <div class="mission-point">
+                                    <div class="point-icon">⚡</div>
+                                    <span>Accelerate technological evolution</span>
+                                </div>
+                                <div class="mission-point">
+                                    <div class="point-icon">🌌</div>
+                                    <span>Bridge dimensions of consciousness</span>
+                                </div>
+                                <div class="mission-point">
+                                    <div class="point-icon">🔮</div>
+                                    <span>Manifest realities through collective will</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vision-visual">
+                        <div class="hologram-container">
+                            <div class="hologram-base"></div>
+                            <div class="hologram-projection"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chambers Section -->
+        <section id="chambers" class="chambers-section">
+            <div class="chambers-background"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Chambers</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Four sacred domains where destiny is forged</p>
+                </div>
+                <div class="chambers-grid">
+                    <div class="chamber-card" data-chamber="wealth">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon">💎</div>
+                            <h3>Wealth</h3>
+                            <p>Master the flow of resources across dimensions</p>
+                            <div class="card-cta">Enter Chamber →</div>
+                        </div>
+                    </div>
+                    <div class="chamber-card" data-chamber="tech">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon">⚙️</div>
+                            <h3>Technology</h3>
+                            <p>Shape the tools that will reshape humanity</p>
+                            <div class="card-cta">Enter Chamber →</div>
+                        </div>
+                    </div>
+                    <div class="chamber-card" data-chamber="art">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon">🎨</div>
+                            <h3>Art</h3>
+                            <p>Create beauty that transcends mortal understanding</p>
+                            <div class="card-cta">Enter Chamber →</div>
+                        </div>
+                    </div>
+                    <div class="chamber-card" data-chamber="influence">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <div class="card-icon">👑</div>
+                            <h3>Influence</h3>
+                            <p>Guide the course of civilization itself</p>
+                            <div class="card-cta">Enter Chamber →</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Council Section -->
+        <section id="council" class="council-section">
+            <div class="council-background"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Council</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Guardians of the new dawn</p>
+                </div>
+                <div class="council-grid">
+                    <div class="founder-card">
+                        <div class="founder-avatar">
+                            <div class="avatar-hologram"></div>
+                            <div class="avatar-scan-lines"></div>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Dr. Elena Voss</h3>
+                            <p class="founder-title">Quantum Architect</p>
+                            <p class="founder-bio">Pioneer in consciousness transfer and dimensional navigation.</p>
+                        </div>
+                    </div>
+                    <div class="founder-card">
+                        <div class="founder-avatar">
+                            <div class="avatar-hologram"></div>
+                            <div class="avatar-scan-lines"></div>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Marcus Chen</h3>
+                            <p class="founder-title">Techno-Sage</p>
+                            <p class="founder-bio">Architect of the neural networks that will surpass human cognition.</p>
+                        </div>
+                    </div>
+                    <div class="founder-card">
+                        <div class="founder-avatar">
+                            <div class="avatar-hologram"></div>
+                            <div class="avatar-scan-lines"></div>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Aria Nakamura</h3>
+                            <p class="founder-title">Reality Sculptor</p>
+                            <p class="founder-bio">Master of probability manipulation and future manifestation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apply Section -->
+        <section id="apply" class="apply-section">
+            <div class="apply-background"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">The Invitation</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Only the worthy may apply</p>
+                </div>
+                <div class="apply-form-container">
+                    <form class="apply-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Your name across all dimensions" required>
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Contact frequency" required>
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-textarea" placeholder="Describe your vision for humanity's next evolution" required></textarea>
+                            <div class="input-glow"></div>
+                        </div>
+                        <button type="submit" class="submit-button">
+                            <span>Transmit Application</span>
+                            <div class="button-ripple"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Audio Player -->
+    <div class="audio-player">
+        <button class="audio-toggle">
+            <span class="audio-icon">🔊</span>
+        </button>
+        <div class="audio-info">
+            <span class="audio-title">Ambient Consciousness</span>
+        </div>
+    </div>
+
+    <!-- Chamber Modal -->
+    <div class="chamber-modal" id="chamber-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2 id="modal-title"></h2>
+                <div id="modal-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
