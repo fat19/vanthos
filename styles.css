@@ -26,6 +26,7 @@ body {
     color: #ffffff;
     overflow-x: hidden;
     cursor: none;
+    scroll-behavior: smooth;
 }
 
 /* Preloader */
@@ -63,6 +64,7 @@ body {
     font-weight: 900;
     letter-spacing: 0.5rem;
     background: linear-gradient(45deg, var(--silver), var(--neon-cyan));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rotate 2s linear infinite;

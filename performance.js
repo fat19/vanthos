@@ -13,7 +13,7 @@ const lazyLoadObserver = new IntersectionObserver((entries) => {
 });
 
 // Throttle function for performance
-default function throttle(func, limit) {
+function throttle(func, limit) {
     let inThrottle;
     return function() {
         const args = arguments;
